@@ -1,0 +1,18 @@
+{
+    "name": "tracker-machine-battery",
+    "description": "Monitor machine battery state",
+    "version": "0.0.1",
+    "author": "hugh@codeoclock.net",
+    "homepage": "https://github.com/hughrawlinson/tracker-machine-battery",
+    "bugs": "https://github.com/hughrawlinson/tracker-machine-battery/issues",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/hughrawlinson/tracker-machine-battery.git"
+    },
+    "dependencies": {
+        "reportr-api": "1.0.2"
+    },
+    "bin": {
+        "tracker-machine": "./tracker.js"
+    }
+}
