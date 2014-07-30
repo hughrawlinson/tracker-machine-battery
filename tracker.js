@@ -1,8 +1,10 @@
 #! /usr/bin/env node
 
 var os = require('os');
-var conf = require('./config.json')
-var pkg = require('./package.json');
+var sys = require('sys')
+var exec = require('child_process').exec;
+var conf = require(__dirname+'/config.json')
+var pkg = require(__dirname+'/package.json');
 var Reportr = require('reportr-api');
 
 conf.event = conf.event === ""||conf.event===undefined?"machine.battery.state":conf.event;
@@ -18,10 +20,7 @@ var client = new Reportr({
     auth: (conf.username? { 'username': conf.username, 'password': conf.password } : null)
 });
 
-var sys = require('sys')
-var exec = require('child_process').exec;
-
-exec("/Users/hugh/Documents/Development/batlog/battest.sh", function(error, stdout, stderr){
+exec(__dirname+"/battest.sh", function(error, stdout, stderr){
     // console.log(stdout.split('    | |           '));
     var properties = {};
     var lines = stdout.split('    | |           "').join('');
