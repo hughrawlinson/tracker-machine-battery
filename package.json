@@ -10,7 +10,7 @@
         "url": "https://github.com/hughrawlinson/tracker-machine-battery.git"
     },
     "dependencies": {
-        "reportr-api": "1.0.2"
+        "reportr-api": "2.0.0"
     },
     "bin": {
         "tracker-machine": "./tracker.js"
