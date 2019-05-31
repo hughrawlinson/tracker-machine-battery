@@ -1,3 +1,5 @@
+__Reportr used to be a thing. It has ceased to be. Don't use this code. This repo is archived.__
+
 # Battery Reportr
 A module to report your Mac's battery data to your instance of [Reportr](http://www.reportr.io/). It may work with Linux, frankly, I have no idea. It will not work with Windows.
 
